@@ -1,0 +1,44 @@
+* {
+    outline: 1px solid red;
+}
+
+html,
+body {
+    min-height: 100vh;
+}
+
+
+
+
+.body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card {
+    display: flex;
+    width: 80vh;
+    height: 60vh;
+}
+
+.card_image {
+    overflow: hidden;
+    flex: 1;
+}
+
+.card_text {
+    flex: 1;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card_text_button {
+    display: block
+}
