@@ -1,8 +1,9 @@
 * {
-    outline: 1px solid red;
+
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 html,
@@ -20,6 +21,8 @@ body {
     justify-content: center;
     align-items: center;
     background-color: hsl(30, 38%, 92%);
+
+
 }
 
 
@@ -27,16 +30,27 @@ body {
     display: flex;
     width: 80vh;
     height: 60vh;
+
+
 }
 
 .card_image {
     overflow: hidden;
-    flex: 1;
+    flex: 0 0 auto;
+    border-radius: 1rem 0 0 1rem;
 }
 
 .card_text {
     flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
     background-color: white;
+    gap: 2rem;
+    padding: 2.5rem;
+    border-radius: 0 1rem 1rem 0;
+
 }
 
 
@@ -45,39 +59,65 @@ body {
     font-weight: 500;
     letter-spacing: 0.5rem;
     font-size: 0.8rem;
-    padding: 2rem;
+    color: hsl(228, 12%, 48%);
+
 }
 
 .card_text_title {
     font-family: Fraunces;
-    padding: 0 2rem;
+    color: hsl(212, 21%, 14%);
+    font-size: 2.4rem;
 }
 
 .card_text_description {
-    padding: 2rem;
+
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
 }
 
-.card_text_price {
+
+.card_text_prices {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.card_text_prices_discount {
     font-family: Fraunces;
     color: hsl(158, 36%, 37%);
-    font-size: 2rem;
-    padding: 2rem;
+    font-size: 3rem;
+
 }
 
-.card_text_price,
-.card_text_discount {
-    display: inline-block
+.card_text_prices_original {
+    text-decoration: line-through;
+    text-decoration-color: hsl(228, 12%, 48%);
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+
 }
 
-img {
+
+.card_image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
 .card_text_button {
-    display: block;
-    margin: 2rem;
-    padding: 1rem 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    font-family: Montserrat;
+    font-weight: bolder;
+    margin: auto;
+    padding: 1rem 5rem;
+    border-radius: 0.5rem;
+    gap: 0.5rem;
 
 }
