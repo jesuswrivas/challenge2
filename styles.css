@@ -1,13 +1,17 @@
 * {
     outline: 1px solid red;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html,
 body {
     min-height: 100vh;
+    font-size: 14px;
+    font-family: Montserrat;
+
 }
-
-
 
 
 .body {
@@ -15,6 +19,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: hsl(30, 38%, 92%);
 }
 
 
@@ -31,6 +36,37 @@ body {
 
 .card_text {
     flex: 1;
+    background-color: white;
+}
+
+
+
+.card_text_product {
+    font-weight: 500;
+    letter-spacing: 0.5rem;
+    font-size: 0.8rem;
+    padding: 2rem;
+}
+
+.card_text_title {
+    font-family: Fraunces;
+    padding: 0 2rem;
+}
+
+.card_text_description {
+    padding: 2rem;
+}
+
+.card_text_price {
+    font-family: Fraunces;
+    color: hsl(158, 36%, 37%);
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+.card_text_price,
+.card_text_discount {
+    display: inline-block
 }
 
 img {
@@ -40,5 +76,8 @@ img {
 }
 
 .card_text_button {
-    display: block
+    display: block;
+    margin: 2rem;
+    padding: 1rem 6rem;
+
 }
